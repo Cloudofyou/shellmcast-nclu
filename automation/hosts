@@ -1,0 +1,20 @@
+# Created by Topology-Converter v4.6.9
+#    Template Revision: v4.6.9
+
+[spines]
+houskyac401a ansible_host=192.168.200.4
+houskyac401b ansible_host=192.168.200.5
+
+[leafs]
+houskyec401g ansible_host=192.168.200.6
+houskyec401h ansible_host=192.168.200.7
+
+[servers]
+ubuntu0 ansible_host=192.168.200.10
+ubuntu1 ansible_host=192.168.200.11
+
+[all:vars]
+ansible_user=cumulus
+ansible_become_pass=CumulusLinux!
+ansible_password=CumulusLinux!
+ansible_ssh_pass=CumulusLinux!
